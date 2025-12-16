@@ -1,0 +1,291 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #ca3c04;
+    padding-top:6%;
+    background-image: url('pattern.png');
+}
+
+.slider-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: rgba(255, 136, 0, 0.9);
+    display: flex;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.sliding-text {
+    display: inline-block;
+    color: rgb(255, 115, 0);
+    font-size: 25px;
+}
+
+.header{
+    position: fixed;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    margin-top: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center end;
+    gap: 3%; 
+    padding: 30px;
+    color: #f0f2f5;
+}
+
+a{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    color: white;
+    z-index: 1;
+    position: relative;
+    padding-top: 5%;
+}
+a:link {
+    color: rgb(255, 196, 2);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(226, 84, 1);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a.active{
+    color: rgb(255, 94, 0);
+    text-decoration: underline;
+}
+
+.lgh{
+    width: 70px;
+    height: auto;
+    justify-self:flex-end;
+    padding-left: 42%;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+    margin-top: 8%;
+}
+
+.produk-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 100vh;
+}
+
+.produk-box {
+    background-color: #fff;
+    width: 100%;
+    max-width: 1250px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    padding: 50px 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.section-title {
+    font-size: 32px;
+    color: #ca3c04;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.orange-line {
+    width: 80px;
+    height: 5px;
+    background-color: #ca3c04;
+    margin: 0 auto 30px auto;
+    border-radius: 5px;
+}
+
+.produk-item {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.produk-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(202,60,4,0.3);
+}
+
+.produk-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.produk-info h3 {
+    color: #ca3c04;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+.produk-info p {
+    font-size: 15px;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.komposisi-detail {
+    display: none;
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.komposisi-detail.show {
+    display: block;
+    animation: fadeInUp 0.5s ease;
+}
+
+.likes {
+    display: block;
+    font-weight: 700;
+    color: #ca3c04;
+    margin-top: 5px;
+}
+
+.kaki {
+    margin-top: 2%;
+    position: relative;
+    padding: 60px 50px 20px 50px;
+    background-image: url('ref20.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    overflow: hidden;
+}
+
+.kakio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.kakicon {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 2fr; 
+    gap: 30px;
+    align-items: start;
+    margin-bottom: 40px;
+}
+
+.kakil ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+}
+
+.kakil li {
+    margin-bottom: 12px;
+    font-size: 40px;
+}
+
+.kakil a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    transition: color 0.3s;
+}
+
+.kakil a:hover {
+    color: #f0ad4e;
+}
+
+.kakis a {
+    color: white;
+    font-size: 22px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.pesan1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pesansekarang1{
+    background-color: #ffffff; 
+    color: rgb(255, 85, 6);
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 100px;
+    padding: 10px;
+    width: 500px;
+    height: 90px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pesansekarang1:hover {
+  background-color: #5c5c5c;
+}
+
+.btn-pesan {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.btn-pesan:hover {
+    transform: scale(1.05);
+}
+
+.footer-copyright {
+    position: relative;
+    z-index: 2;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+}
